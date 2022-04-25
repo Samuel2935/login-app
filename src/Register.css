@@ -1,0 +1,32 @@
+body{
+    background-color: honeydew;
+}
+
+
+.reg{
+    width: 60%;
+    height: auto;
+    margin-left: 7rem;
+    padding: 20px;
+    background-color: hsl(210, 33%, 19%);
+    color: white;
+    border-radius: 12px;
+    margin-top: 5rem;
+    
+    /* display: flex; */
+}
+
+.reg div {
+    padding: .5rem;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .5rem;
+}
+
+
+
+input{
+    border-radius: .3rem;
+    padding: .5rem;
+}

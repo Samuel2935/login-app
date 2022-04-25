@@ -1,8 +1,73 @@
 .App {
   text-align: center;
+ 
+
 }
 
-.App-logo {
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+
+nav{
+  margin: 0;
+  width: 100%;
+  height: 88px;
+  background-color: #203040;
+  display: flex;
+  justify-content: center;
+  /* color: white; */
+  text-decoration: none;
+  padding: 2rem;
+
+
+}
+
+.GU{
+  color: red;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+  border: 2PX solid white;
+  border-radius: 50%;
+  margin-left: 2px;
+ 
+}
+
+a{
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+}
+
+a:hover{
+  color: yellowgreen;
+}
+
+a:active{
+  color: red;
+}
+
+.logout{
+  color: #1da;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+  background-color: #203040;
+  cursor: pointer;
+
+}
+
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +100,76 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+/* imageslide code */
+
+
+
+
+.slidein{
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+ 
+  padding: 1rem;
+  background-image:linear-gradient(to left, rgba(225,0,0,0), aqua);
+ 
+
+ 
+  /* background-color: beige; */
+  
 }
+
+.image{
+ 
+    height: 100%;
+  width: 100%;  
+  border-radius: .5rem;
+
+}
+
+.right-arrow{
+position: relative;
+top: 50%;
+/* right: 20px; */
+font-size: 3rem;
+color: aquamarine;
+/* z-index: 10; */
+user-select: none;
+margin-top: 5rem;
+cursor: pointer;
+
+}
+
+.left-arrow{
+position: relative;
+top: 50%;
+
+font-size: 3rem;
+color: aquamarine;
+
+user-select: none;
+margin-top: 5rem;
+cursor: pointer;
+
+
+}
+
+.left-arrow:hover{
+ color: tomato;
+}
+.right-arrow:hover{
+  color: tomato;
+ }
+
+
+ /* styling the about pages */
+
+ ol li{
+   list-style-type: none;
+ }
