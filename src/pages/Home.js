@@ -55,13 +55,15 @@ console.log(current)
 </div>
 
 <div className='bq'>
-  <h2>TRAINING COURSES/SERVICES</h2>
+  <h2>TRAINING/SERVICES</h2>
  <blockquote>
  <ul>
     <li>WEB DESIGN 🕸</li>
     <li>WEB DEVELOPMENT 👩‍💻</li>
     <li>MOBILE DEVELOPMENT 📱</li>
     <li>PROGRAMMING 🦾</li>
+    <li>ML</li>
+    <li>AI</li>
     <li>HAIR CUT 💇‍♂️</li>
     <li>HAIR STYLING 👱‍♀️</li>
     <li>HAIR COLORING 👱 </li>
@@ -98,40 +100,17 @@ console.log(current)
 
 <div style={{borderTop:".5rem #333" , marginTop:"1rem", width:"100%"}}></div>
 
-{/* <footer>
-<div className='contact'>
-  <h2>CONTACT</h2>
-  
-  <div className='icons'>
-   <a href='#'> <div className='face' style={{padding:".5rem", backgroundColor:"#1da1f2"}}> < FontAwesomeIcon icon={faFacebook}  /> </div></a>
-    <a href='#'><div className='twitt' style={{padding:".5rem", backgroundColor:"#1da1f2"}}> < FontAwesomeIcon icon={faTwitter}  /></div></a>
-   <a href='#'> <div className='linda' style={{padding:".5rem", backgroundColor:"#1da1f2"}}> < FontAwesomeIcon icon={faLinkedin}  /></div></a>
-   <a href='#'> <div className='insta' style={{padding:".5rem",}}> < FontAwesomeIcon icon={faInstagram}  /></div></a>
-   <a href='#'> <div className='youth' style={{padding:".5rem", backgroundColor:"red"}}> < FontAwesomeIcon icon={faYoutube}  /></div></a>
-
-     </div>
-
-     <div/> 
-     
-   
-      
 
 
-   <div className='foot'>
-  
-  <span> all right reserved</span> <br></br>
-   <span> &copy;  GU 2022</span>
- </div>
 
-</div>
 
- 
-</footer> */}
+
 
 
 <footer>
         
         <div id="contact">
+          
             <h5>CONTACT</h5>
             <>7th avenue 23Rd Festac city, Lagos</> <br/>                      
             Email: <a href="samuelblessed38@gmail.com"> <div className='linda' style={{padding: "2px"}}>< FontAwesomeIcon icon={faMailBulk}  /></div></a> <br/>                      
@@ -141,6 +120,7 @@ console.log(current)
 
     <div className='media'>
         <h5>MEDIA</h5>
+        <hr></hr>
         <a href='#'> <div className='face' style={{padding:".5rem"}}> < FontAwesomeIcon icon={faFacebook}  /> </div></a>
     <a href='#'><div className='twitt' style={{padding:".5rem"}}> < FontAwesomeIcon icon={faTwitter}  /></div></a>
    <a href='#'> <div className='linda' style={{padding:".5rem"}}> < FontAwesomeIcon icon={faLinkedin}  /></div></a>
@@ -149,13 +129,19 @@ console.log(current)
 
     </div>
 <div>
+  <hr></hr>
     All right reserved <br/>
   copyright  &copy; 2022 GUVI training institute 
 </div>
 
     </footer>
 
-    </div>
-    </div>
+                 
+
+
+            </div>
+                    </div>
+   
+   
   )
 }

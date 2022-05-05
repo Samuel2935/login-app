@@ -2,16 +2,22 @@ body{
     background-color: azure;
 }
 
+
+
 .login{
    font-size: 30px;
-   width: 60%;
+   width: 100%;
     height: auto;
-    margin-left: 7rem;
     padding: 20px;
     background-color: #203040;
+    background-image:linear-gradient(to bottom, #1da5, #203040);
     color: wheat;
+     border-radius: 12px;
+    
     border-radius: 12px;
-    margin-top: 5rem;
+    justify-items: center;
+  padding: 4em 3em ;
+  
 }
 
 .login-with-google-btn:hover{

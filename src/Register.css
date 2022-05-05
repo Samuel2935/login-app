@@ -2,19 +2,38 @@ body{
     background-color: honeydew;
 }
 
+nav{
+ 
+    background-color: #203040;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding-right: 6rem;
+    z-index: 1000;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+  
+  } 
 
 .reg{
-    width: 60%;
+    width: 100%;
     height: auto;
-    margin-left: 7rem;
-    padding: 20px;
-    background-color: hsl(210, 33%, 19%);
+    /* background-color: hsl(210, 33%, 19%); */
+    background-image:linear-gradient(to bottom, #1da5, #203040);
     color: white;
     border-radius: 12px;
-    margin-top: 5rem;
+
+    font-size: 30px;
+      border-radius: 12px; 
     
-    /* display: flex; */
+     justify-items: center;
+   padding: 4em .5em ;
 }
+
+
 
 .reg div {
     padding: .5rem;

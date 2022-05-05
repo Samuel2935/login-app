@@ -1,50 +1,72 @@
-.App {
-  text-align: center;
- 
-
+@media (orientation: portrait), (max-height: 400px) {
+  .App {
+    color: Red;
+  }
 }
-
-body{
+@media (orientation: landscape) and (max-width: 200px) {
+  .App {
+    color: blue;
+  }
+}
+ 
+ body{
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
  
 
+}  
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav{
-  margin: 0;
-  width: 100%;
-  height: 88px;
+/* .App{
+  text-align: center;
+} */
+
+
+ nav{
+ 
   background-color: #203040;
-  display: flex;
   justify-content: center;
-  /* color: white; */
-  text-decoration: none;
-  padding: 2rem;
+  justify-items: center;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  padding-right: 2rem;
+  z-index: 1000;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
 
+ 
+} 
 
-}
 
 .GU{
   color: red;
   padding: 1rem;
   text-decoration: none;
-  margin: 10px;
   font-size: 25px;
-  border: 2PX solid white;
-  border-radius: 50%;
-  margin-left: 2px;
- 
-}
+  text-decoration: overline;
 
-a{
+  margin-left: 5rem;
+ 
+} 
+
+ a{
   color: white;
   padding: 1rem;
   text-decoration: none;
   margin: 10px;
   font-size: 25px;
-}
+} 
 
 a:hover{
   color: yellowgreen;
@@ -66,52 +88,9 @@ a:active{
 }
 
 
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
-
-/* imageslide code */
-
-
-
-
 .slidein{
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -173,3 +152,6 @@ cursor: pointer;
  ol li{
    list-style-type: none;
  }
+
+
+

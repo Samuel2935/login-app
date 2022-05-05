@@ -44,34 +44,34 @@ if(isAuth){
     <div className='register'>
     
       <div className='reg'>
-      <h1>Register here!!</h1>
+      <h1>Register!!</h1>
 
       <>
         <div>
-          <label> full name  </label> 
+          <label></label> 
           <input placeholder='fullName' onChange={(event)=>{setFullName(event.target.value)}} />
         </div>
         <div>
-          <label> course </label>
+          <label></label>
           <input placeholder='course' onChange={(event)=>{setCourse(event.target.value)}} />
         </div>
 
         <div>
-          <label> phone number </label>
+          <label></label>
           <input placeholder='phone number' onChange={(event)=>{setPhone(event.target.value)}}  />
         </div>
         <div>
-          <label>email </label>
+          <label></label>
           <input placeholder='email'  onChange={(event)=>{setEmail(event.target.value)}} />
         </div>
 
         <div>
-          <label>nationality </label>
+          <label></label>
           <input placeholder='nationality'  onChange={(event)=>{setNationality(event.target.value)}} />
         </div>
 
         <div>
-          <label>Academic qualification </label>
+          <label></label>
           <input placeholder='qualification'/>
         </div>
 

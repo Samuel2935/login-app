@@ -58,6 +58,7 @@ thereby reducing the unemployment rate in Africa.
 <footer className='footer'>
         
         <div id="contact">
+          <hr></hr>
             <h5>CONTACT</h5>
             <>7th avenue 23Rd Festac city, Lagos</> <br/>                      
             Email: <a href="samuelblessed38@gmail.com"> <div className='linda' style={{padding: "2px"}}>< FontAwesomeIcon icon={faMailBulk}  /></div></a> <br/>                      
@@ -66,6 +67,7 @@ thereby reducing the unemployment rate in Africa.
         </div>
 
     <div className='media'>
+      <hr></hr>
         <h5>MEDIA</h5>
         <a href='#'> <div className='face' style={{padding:".5rem"}}> < FontAwesomeIcon icon={faFacebook}  /> </div></a>
     <a href='#'><div className='twitt' style={{padding:".5rem"}}> < FontAwesomeIcon icon={faTwitter}  /></div></a>
@@ -75,6 +77,7 @@ thereby reducing the unemployment rate in Africa.
 
     </div>
 <div>
+  <hr></hr>
     All right reserved <br/>
   copyright  &copy; 2022 GUVI training institute 
 </div>

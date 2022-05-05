@@ -32,9 +32,11 @@ signOut(auth).then(()=>{
 
   return (
    <Router>
+     
 <nav>
 
 <div className='GU'>GUVI</div>
+
   <Link to='/'> Home</Link>
   {
    
@@ -43,16 +45,17 @@ signOut(auth).then(()=>{
    (
      <>
     <button className='logout' onClick={signUserOut}>log out</button>
-    <Link to='/Register'> Register </Link> 
+    {/* <Link to='/Register'> Register </Link>  */}
     </>
    )
   
   
    }
  <Link to = "/About">About</Link>
- {/* <Link to = "/ImageSlides">Images</Link> */}
+
 </nav>
-     
+
+  
      <Routes>
        <Route path='/' element = {<Home slides={slideData}/>}/>
        <Route path='/About' element = {<About/>}/>
