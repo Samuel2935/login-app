@@ -1,4 +1,4 @@
-
+   
 
 export const slideData = [
     {
@@ -14,6 +14,8 @@ export const slideData = [
     },
     {
         image: 'https://th.bing.com/th/id/R.384f0d525b17cb7eaa4700c5f398274b?rik=kfvYDO1dwmykAQ&pid=ImgRaw&r=0'
+
     },
+
 ]
 

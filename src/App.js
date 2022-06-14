@@ -14,6 +14,7 @@ import { useState } from 'react';
 import {signOut} from 'firebase/auth'
 import { auth } from './firebase-config';
 import { collection } from 'firebase/firestore';
+import logo from './images/logo.jpg'
 
 
 function App() {
@@ -35,7 +36,9 @@ signOut(auth).then(()=>{
      
 <nav>
 
-<div className='GU'>GUVI</div>
+<div className='GU'>
+  <img style={{height:'40px', width:'40px', borderRadius:'50%'}} src={logo} alt='logo'></img>
+</div>
 
   <Link to='/'> Home</Link>
   {
