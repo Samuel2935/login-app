@@ -5,8 +5,9 @@ import { db, auth } from '../firebase-config';
 import { useNavigate } from 'react-router-dom';
 
 export default function Register({ isAuth, input }) {
+
   const [fullName, setFullName] = useState('');
-  const [course, setCourse] = useState('');
+  const [skill, setSkill] = useState('');
   const [nationality, setNationality] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState(0);
@@ -15,7 +16,7 @@ export default function Register({ isAuth, input }) {
   let navigate = useNavigate();
   const addReg = async () => {
     await addDoc(postCollection, {
-      course,
+      skill,
       phone,
       nationality,
       email,
@@ -44,74 +45,90 @@ export default function Register({ isAuth, input }) {
   return (
     <div className="register">
       <div className="reg">
-        <h1>Register!!</h1>
+        <h3 style={{marginLeft:"5rem"}}>register here </h3>
 
-        <>
+        <form name='myForm' className='myForm'>
           <div>
-            <label></label>
-            <input
+       
+            <input 
               placeholder="fullName"
               onChange={(event) => {
                 setFullName(event.target.value);
               }}
-            />
+           required />
           </div>
           <div>
-            <label></label>
-            <input
-              placeholder="course"
+          
+            <input 
+              placeholder="skill"
               onChange={(event) => {
-                setCourse(event.target.value);
+                setSkill(event.target.value);
               }}
-            />
+              required/>
           </div>
 
           <div>
-            <label></label>
+          
             <input
               placeholder="phone number"
+              type="number"
               onChange={(event) => {
                 setPhone(event.target.value);
               }}
-            />
+              required />
           </div>
           <div>
-            <label></label>
+           
             <input
               placeholder="email"
               onChange={(event) => {
                 setEmail(event.target.value);
               }}
-            />
+              required />
           </div>
 
           <div>
-            <label></label>
+           
             <input
               placeholder="nationality"
               onChange={(event) => {
                 setNationality(event.target.value);
               }}
-            />
+              required />
           </div>
 
           <div>
-            <label></label>
-            <input placeholder="qualification" />
+  
+            <input placeholder="qualification"    required/>
+          </div>
+<div>
+
+  <select >
+<option>sex</option>
+<option>male</option>
+<option>female</option>
+
+  </select>
+</div>
+          <div>
+      
+           <select placeholder='skill'>
+            
+           <option>select skill</option>
+            <option>web development</option>
+            <option>web design</option>
+            <option>hair cut</option>
+            <option>hair coloring</option>
+            <option>hair styling</option>
+           </select>
           </div>
 
           <div>
-            <label> sex </label> <strong>:</strong>
-            <input type="radio" value="male" /> Male
-            <input type="radio" value="female" /> Female
-          </div>
-
-          <div>
-            <button style={styles} disabled={!input} onClick={addReg}>
+            <button className='btn-1' onClick={addReg}>
               submit
             </button>
           </div>
-        </>
+        </form>
       </div>
     </div>
   );

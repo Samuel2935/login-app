@@ -9,12 +9,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Login from './pages/login';
 import Register from './pages/Register';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate} from 'react-router-dom';
 import { useState } from 'react';
 import {signOut} from 'firebase/auth'
 import { auth } from './firebase-config';
 import { collection } from 'firebase/firestore';
-import logo from './images/logo.jpg'
+import logo from './images/logo.jpg';
+
 
 
 function App() {
@@ -23,16 +24,20 @@ const[isAuth, setIsAuth] = useState(false);
 
 
 const signUserOut = () =>{
+     
 signOut(auth).then(()=>{
   localStorage.clear()
   setIsAuth(false)
   window.location.pathname = '/login';
+  
+
 })
 }
 
 
   return (
    <Router>
+
      
 <nav>
 

@@ -1,40 +1,112 @@
-body{
-    background-color: azure;
-}
+/* body {
+  background-color: azure;
+} */
 
+/* 
+.login {
+  font-size: 30px;
+  width: 70%;
+  margin-left: 15%;
+  height: auto;
+  background-image: linear-gradient(to bottom, #fff, #fff, #1da5);
+  color: #000;
+  border-radius: 12px;
+  justify-items: center;
+  padding: 4em 2em;
+  position: relative;
+  box-shadow: 0 4px 4px green;
+
+} */
 
 
 .login{
-   font-size: 30px;
-   width: 100%;
-    height: auto;
-    padding: 20px;
-    background-color: #203040;
-    background-image:linear-gradient(to bottom, #1da5, #203040);
-    color: wheat;
-     border-radius: 12px;
-    
-    border-radius: 12px;
-    justify-items: center;
-  padding: 4em 3em ;
   
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+  position: absolute;
+  right: 3rem;
+  width: 70%;
+  height: auto;
+  padding: 1.5rem;
+  margin-right: 10%;
+  top: 10rem;
+  color: #000;
+  align-items: center;
+  border-radius: .5rem;
 }
 
-.login-with-google-btn:hover{
-color: #1da51d;
-}
-.login-with-google-btn:active{
-    color: rgb(0, 30, 128);
-    padding: 1rem;
-    }
-
-.login-with-google-btn{
+button{
+    background-color: green;
+    color: #fff;
+    position: absolute;
     cursor: pointer;
-    border: none;
-    padding: .5rem;
-    border-radius: 4px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    color: #757575;
-    
-    box-shadow: 0 -1px 0 rgba(0,0,0,04), 0 1px 1px rgba(0,0,0,0,25);
+    width: 100%;
+    height: 50px;
+    font-size: x-large;
+    left: 0;
+    bottom: 2px;
+
+}
+
+.login-with-google-btn:hover {
+  color: blue;
+}
+
+.login-with-google-btn {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 04), 0 1px 1px rgba(0, 0, 0, 0, 25);
+}
+
+input{
+  width: 100%;
+  margin: 3px;
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+input:hover{
+  border: 1px solid #03A9F4;
+}
+
+button{
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  padding: 4px;
+  border-radius: 5px; 
+  cursor: pointer;
+  color: aliceblue;
+  box-shadow: 5px 5px 10px whitesmoke;
+}
+
+
+select{
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  padding: 4px;
+  border-radius: 5px; 
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+select:hover{
+  border: 1px solid #03A9F4;
+}
+
+
+.btn{
+  display: flex ;
+  width: 100% !important;
+  /* margin: 2rem; */
+  justify-content: space-between;
+  justify-items: space-between;
 }

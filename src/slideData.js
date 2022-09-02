@@ -1,4 +1,4 @@
-   
+   import logo from './images/logo2.jpg'
 
 export const slideData = [
     {
@@ -10,7 +10,7 @@ export const slideData = [
         image: 'https://th.bing.com/th/id/R.458075ad34e1b9cfc3ee49cd8746c009?rik=fZYOpFlqT%2fSCHQ&pid=ImgRaw&r=0'
     },
     {
-        image: 'https://th.bing.com/th/id/OIF.LDTlHuJVv1b67ArCRLoBkA?pid=ImgDet&rs=1'
+        image: {logo}
     },
     {
         image: 'https://th.bing.com/th/id/R.384f0d525b17cb7eaa4700c5f398274b?rik=kfvYDO1dwmykAQ&pid=ImgRaw&r=0'

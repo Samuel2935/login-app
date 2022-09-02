@@ -17,15 +17,14 @@ export default function login({setIsAuth}) {
   }
 
   return (
-    <>
+    <div className='login-house'>
     <div className='login'>
       <h3>Login...</h3>
-<p>signUp with Google to continue</p> 
 <button className='login-with-google-btn' onClick={signInwithGoogle}>
-  sign up with Google
+  with Google
   </button>     
 
     </div>
-    </>
+    </div>
   )
 }
