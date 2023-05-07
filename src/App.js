@@ -3,12 +3,16 @@ import './App.css';
 import './Home.css'
 import './login.css'
 import './Register.css'
+import './index.css'
+import './NotFound.css'
 import ImageSlides from './imageSlides';
 import { slideData } from './slideData';
 import Home from './pages/Home';
 import About from './pages/About';
 import Login from './pages/login';
 import Register from './pages/Register';
+import Payment from './pages/Payment';
+import NotFound from './pages/NotFound';
 import {BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate} from 'react-router-dom';
 import { useState } from 'react';
 import {signOut} from 'firebase/auth'
@@ -52,7 +56,7 @@ signOut(auth).then(()=>{
    
    (
      <>
-    <button className='logout' onClick={signUserOut}>log out</button>
+    <button className='logout' onClick={signUserOut}>Logout</button>
     {/* <Link to='/Register'> Register </Link>  */}
     </>
    )
@@ -62,14 +66,14 @@ signOut(auth).then(()=>{
  <Link to = "/About">About</Link>
 
 </nav>
-
-  
      <Routes>
        <Route path='/' element = {<Home slides={slideData}/>}/>
        <Route path='/About' element = {<About/>}/>
        <Route path='/ImageSlides' element = {<ImageSlides slides={slideData} />}/>
        <Route path='/Login' element = {<Login setIsAuth={setIsAuth}/>}/>
        <Route path='/Register' element = {<Register input={collection} />} isAuth={isAuth}/>
+       <Route path='/Payment' element = {<Payment/>}/>
+       <Route path='*' element = {<NotFound/>}/>
      </Routes>
    </Router>
   );

@@ -8,21 +8,22 @@ nav {
   justify-content: center;
   justify-items: center;
   display: flex;
+  /* justify-content: space-evenly; */
   position: fixed;
   width: 100%;
   height: auto;
   padding-right: 6rem;
   z-index: 1000;
-  font-size: larger;
+  font-size: small;
   font-family: 'Courier New', Courier, monospace;
 }
+
 
 .reg {
   width: 100%;
   height: auto;
-  /* background-image: linear-gradient(to bottom, #1da5, antiquewhite); */
   background: #d3d3d3;
-  color: white;
+  color: #1c1c;
   border-radius: 12px;
   font-size: 30px;
   border-radius: 12px;
@@ -30,7 +31,13 @@ nav {
   padding: 4em 0.5em;
 }
 
+.register{
+  display: flex;
+  max-width: 100%;
+}
+
 .reg div {
+  width: 100%;
   padding: 0.5rem;
   border: 2px solid white;
   display: flex;
@@ -41,16 +48,18 @@ nav {
 
 input {
   border: none;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
+  border-radius: 5px;
+  padding: 0.7rem;
   margin: 2px;
   width: 100%;
   height: auto;
 }
 .btn-1 {
-  width: 100%;
+  /* width: 100%; */
+  display: flex;
+  max-width: 100%;
   border: none;
-  border-radius: 12px;
+  border-radius: 5px;
   height: auto;
   padding: .5rem;
   position: relative;
@@ -58,8 +67,8 @@ input {
 }
 
 select {
-  border-radius: 0.3rem;
-  padding: 0.5rem;
+  border-radius: 5px;
+  padding: 0.7rem;
   margin: 2px;
   width: 100%;
   height: auto;

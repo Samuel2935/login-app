@@ -48,7 +48,7 @@ thereby reducing the unemployment rate in Africa.
    <hr/>
    <div style={{display:"flex",justifyContent:"space-between"}}>
      <a href="#" style={{ borderRight:"3px solid red",  paddingRight:"5PX"}} >Blog</a> 
-     <div > <a href="#" style={{ borderRight:"3px solid red", paddingRight:"5PX"}} ><  FontAwesomeIcon icon={faVoicemail}  />  Voicemail</a></div>
+     <div > <a href="#" style={{ borderRight:"3px solid red", paddingRight:"5PX"}} >  Voicemail</a></div>
      <div> <a href="#"> GIST</a></div>
    </div>
    <hr/>
@@ -79,7 +79,7 @@ thereby reducing the unemployment rate in Africa.
 <div style={{textAlign:"center"}}>
   <hr></hr>
     All right reserved <br/>
-  copyright  &copy; 2022 GUVI training institute 
+  copyright  &copy; 2023 GUVI training institute 
 </div>
 
     </footer>

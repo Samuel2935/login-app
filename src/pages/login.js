@@ -19,9 +19,8 @@ export default function login({setIsAuth}) {
   return (
     <div className='login-house'>
     <div className='login'>
-      <h3>Login...</h3>
 <button className='login-with-google-btn' onClick={signInwithGoogle}>
-  with Google
+  Login
   </button>     
 
     </div>
