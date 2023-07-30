@@ -1,146 +1,81 @@
-@media (orientation: portrait), (max-height: 400px) {
-  .App {
-    color: Red;
-  }
-}
-@media (orientation: landscape) and (max-width: 200px) {
-  .App {
-    color: blue;
-  }
-}
- 
- body{
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:medium;
-  font-family: 'Courier New', Courier, monospace;
-}  
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+.logo{
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
 }
 
-
-
- nav{
- 
-  background-color: #203040;
-  justify-content: center;
-  justify-items: center;
-  justify-content: space-between;
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: auto;
-  padding-right: 2rem;
-  z-index: 1000;
-  font-size: larger;
-  font-family: 'Courier New', Courier, monospace;
-
- 
-} 
-
-
-.GU{
-  padding: 1rem;
-  font-size: 1rem;
-  margin-left: 5rem;
- 
-} 
-
- a{
+a {
   color: white;
   padding: 1rem;
   text-decoration: none;
   margin: 10px;
   font-size: 25px;
-} 
+}
 
-a:hover{
+a:hover {
   color: yellowgreen;
 }
 
-a:active{
+a:active {
   color: red;
 }
 
-.logout{
+.logout {
   color: #1da;
-  padding: 1rem;
+  padding-top: 1rem;
   text-decoration: none;
-  /* margin: 10px; */
-  font-size: 25px;
-  display: flex;
+  font-size: medium;
   background-color: #fff;
   cursor: pointer;
   border: none;
-
 }
 
-
-.slidein{
+.slidein {
   height: auto;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   justify-items: center;
   padding: 1rem;
-  background-color: white;
-  
 }
 
-.image{
- 
-    height: 100%;
-  width: 100%;  
-  border-radius: .5rem;
-
+.image {
+  border-radius: 0.5rem;
 }
 
-.right-arrow{
-position: relative;
-top: 50%;
-font-size: 3rem;
-color: aquamarine;
-user-select: none;
-margin-top: 5rem;
-cursor: pointer;
-
+.right-arrow {
+  position: relative;
+  top: 50%;
+  font-size: 2em;
+  color: aquamarine;
+  user-select: none;
+  margin-top: 5rem;
+  cursor: pointer;
 }
 
-.left-arrow{
-position: relative;
-top: 50%;
-
-font-size: 3rem;
-color: aquamarine;
-
-user-select: none;
-margin-top: 5rem;
-cursor: pointer;
-
-
+.left-arrow {
+  position: relative;
+  top: 50%;
+  font-size: 2em;
+  color: aquamarine;
+  user-select: none;
+  margin-top: 5rem;
+  cursor: pointer;
 }
 
-.left-arrow:hover{
- color: tomato;
+.left-arrow:hover {
+  color: grey;
 }
-.right-arrow:hover{
-  color: tomato;
- }
-
-
- ol li{
-   list-style-type: none;
- }
-.media{
-  text-align: center;
+.right-arrow:hover {
+  color: grey;
 }
 
+ol li {
+  list-style-type: none;
+}
 

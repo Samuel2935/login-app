@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { addDoc, collection } from 'firebase/firestore';
 import { db, auth } from '../firebase-config';
 import { useNavigate } from 'react-router-dom';
+import styles from '../Register.css'
+
 
 export default function Register({ isAuth, input }) {
   const [fullName, setFullName] = useState('');
@@ -23,6 +25,7 @@ export default function Register({ isAuth, input }) {
         id: auth.currentUser.uid,
         fullName,
       },
+      
     });
     navigate('/Payment');
   };
@@ -33,22 +36,15 @@ export default function Register({ isAuth, input }) {
     }
   }, []);
 
-  // const styles = {
-  //   marginLeft: '6rem',
-  //   borderRadius: '3rem',
-  //   padding: '.5rem',
-  //   width: '7rem',
-  //   cursor: 'pointer',
-  // };
   return (
     <div className="register">
       <div className="reg">
-        <h3 style={{ marginLeft: '1rem' }}>Register here!! </h3>
+        <h3>Register here!! </h3>
 
         <form name="myForm" className="myForm">
           <div>
             <input
-              placeholder="fullName"
+              placeholder="Name"
               onChange={(event) => {
                 setFullName(event.target.value);
               }}
@@ -67,7 +63,7 @@ export default function Register({ isAuth, input }) {
 
           <div>
             <input
-              placeholder="phone number"
+              placeholder="phone"
               type="number"
               onChange={(event) => {
                 setPhone(event.target.value);

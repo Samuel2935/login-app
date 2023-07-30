@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+import styles from './payment.css'
 // public_key: 'FLWPUBK_TEST-9cc7ee1c81d5698562740704f379da5f-X',
-
 
 import { useState } from 'react';
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 
-export default function App() {
+export default function Payment() {
   const [amount, setAmount] = useState(0);
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -32,8 +32,8 @@ export default function App() {
   const handleFlutterPayment = useFlutterwave(config);
 
   return (
-    <div className="App">
-      <div className="container">
+    <div className="pay">
+      <div className="payment">
         <input
           type="number"
           placeholder="Amount"
